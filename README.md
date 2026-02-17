@@ -1,0 +1,1 @@
+SCMS is a centralized web application that simplifies campus academic management by handling attendance, communication, and academic records digitally. It improves efficiency, accuracy, and communication between students and teachers
