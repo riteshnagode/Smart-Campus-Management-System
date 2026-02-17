@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Overview</title>
+    <link rel="stylesheet" href="facultyassignment.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="main-header">
+            <h1>Assignment Over view</h1>
+            <button class="back-btn"> <a style="text-decoration: none;" href="http://127.0.0.1:5500/facultydashbord.html">Back</a></button>
+        </header>
+
+        <div class="stats-bar">
+            <div class="stat-box blue">Total Assignments : 8</div>
+            <div class="stat-box yellow">Pending Submission : 12</div>
+            <div class="stat-box green">Reviewed Submission : 20</div>
+            <div class="stat-box red">Late Submission : 3</div>
+        </div>
+
+        <div class="main-content">
+            <section class="assignments-list">
+                <h2>Assignments List</h2>
+                
+                <div class="assignment-card">
+                    <div class="card-header">
+                        <span class="index-box">1</span>
+                        <h3>Data Structures - Arrays</h3>
+                    </div>
+                    <div class="card-details">
+                        <p><strong>Subject :</strong> Data structures | <strong>Sem :</strong> 4th CSE</p>
+                        <p><strong>Assignment Date :</strong> 05 Feb 2026 | <strong>Due Date :</strong> 12 Feb 2026</p>
+                        <p><strong>Submission :</strong> 24/30 | <strong>Status :</strong> <span class="badge pending">pending</span></p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-view">View Submission</button>
+                        <button class="btn btn-edit">Edit Assignment</button>
+                        <button class="btn btn-remind">Send Reminder</button>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="card-header">
+                        <span class="index-box orange">2</span>
+                        <h3>Digital Electronics - Logic Gates</h3>
+                    </div>
+                    <div class="card-details">
+                        <p><strong>Subject :</strong> Digital Electronics | <strong>Sem :</strong> 3rd ECE</p>
+                        <p><strong>Assignment Date :</strong> 02 Feb 2026 | <strong>Due Date :</strong> 10 Feb 2026</p>
+                        <p><strong>Submission :</strong> 25/25 | <strong>Status :</strong> <span class="badge reviewed">Reviewed</span></p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-view">View Submission</button>
+                        <button class="btn btn-edit">Edit Assignment</button>
+                        <button class="btn btn-remind">Send Reminder</button>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h4>Submission Analytics</h4>
+                    <div class="analytics-row">
+                        <span>Pending : <strong class="text-blue">6</strong></span>
+                        <span>Graded: <strong class="text-orange">20</strong></span>
+                    </div>
+                    <p>Late: <strong class="text-red">3</strong></p>
+                </div>
+
+                <div class="sidebar-section">
+                    <h4>Notifications</h4>
+                    <ul>
+                        <li>2 pending assignments to review</li>
+                        <li>Reminder : assignment due tomorrow</li>
+                        <li>3 Late Submission to address</li>
+                    </div>
+                </div>
+
+                <div class="sidebar-section create-section">
+                    <h4>Create New Assignment</h4>
+                    <input type="text" placeholder="Assignment Title">
+                    <input type="text" placeholder="Due Date">
+                    <input type="text" placeholder="Select Course / Branch">
+                    <button class="btn-create">+ Create assignment</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

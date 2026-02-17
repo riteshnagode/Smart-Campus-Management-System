@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f2f5a;
+}
+
+/* Page */
+.page {
+  max-width: 1000px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  background: #183a6b;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.back {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Cards container */
+.cards {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Assignment card */
+.card {
+  background: #d88a4d;
+  color: black;
+  padding: 18px 22px;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Text */
+.subject {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.teacher {
+  font-size: 13px;
+  margin-top: 5px;
+}
+a{
+  color: white;
+}

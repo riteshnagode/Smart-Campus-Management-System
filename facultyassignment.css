@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dashboard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-height: 90vh;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.main-header h1 { font-size: 1.2rem; }
+
+.back-btn {
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Stats Bar */
+.stats-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stat-box {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.blue { background-color: #7da7ff; }
+.yellow { background-color: #fff176; }
+.green { background-color: #a5f0b4; }
+.red { background-color: #ff9d9d; }
+
+/* Main Layout */
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.assignments-list {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    background: #fff;
+}
+
+/* Assignment Cards */
+.assignment-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.index-box {
+    background: #ff7043;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.card-details p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.badge {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.pending { background: #fff176; }
+.reviewed { background: #69f0ae; }
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-view { background: #5c6bc0; }
+.btn-edit { background: #4caf50; }
+.btn-remind { background: #ffab91; }
+
+/* Sidebar Sections */
+.sidebar-section {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.sidebar-section h4 {
+    text-align: center;
+    background: #f8f8f8;
+    margin: -15px -15px 15px -15px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.analytics-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.text-blue { color: #3f51b5; }
+.text-orange { color: #f4511e; }
+.text-red { color: #d32f2f; }
+
+.sidebar-section ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Form in Sidebar */
+.create-section input {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-create {
+    width: 100%;
+    background: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}

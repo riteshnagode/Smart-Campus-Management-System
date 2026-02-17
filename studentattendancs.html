@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance</title>
+  <link rel="stylesheet" href="studentattendance.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+   <a style="text-decoration: none;" href="http://127.0.0.1:5500/studentdashbord.html">← Attendance</a> 
+  </div>
+
+  <!-- Attendance Table -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Present</th>
+          <th>Total</th>
+          <th>Percentage</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Mathematics</td>
+          <td>42</td>
+          <td>48</td>
+          <td>
+            <div class="progress">
+              <div class="bar good" style="width:87.5%"></div>
+            </div>
+            87.5%
+          </td>
+          <td class="good-text">GOOD</td>
+        </tr>
+
+        <tr>
+          <td>Physics</td>
+          <td>38</td>
+          <td>45</td>
+          <td>
+            <div class="progress">
+              <div class="bar good" style="width:84.4%"></div>
+            </div>
+            84.4%
+          </td>
+          <td class="good-text">GOOD</td>
+        </tr>
+
+        <tr>
+          <td>Chemistry</td>
+          <td>40</td>
+          <td>44</td>
+          <td>
+            <div class="progress">
+              <div class="bar good" style="width:90.9%"></div>
+            </div>
+            90.9%
+          </td>
+          <td class="good-text">GOOD</td>
+        </tr>
+
+        <tr>
+          <td>Computer Science</td>
+          <td>35</td>
+          <td>40</td>
+          <td>
+            <div class="progress">
+              <div class="bar good" style="width:87.5%"></div>
+            </div>
+            87.5%
+          </td>
+          <td class="good-text">GOOD</td>
+        </tr>
+
+        <tr>
+          <td>English</td>
+          <td>22</td>
+          <td>42</td>
+          <td>
+            <div class="progress">
+              <div class="bar danger" style="width:52.3%"></div>
+            </div>
+            52.3%
+          </td>
+          <td class="danger-text">DANGER</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>

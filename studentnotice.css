@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f2f5a;
+}
+
+/* Page */
+.page {
+  max-width: 1000px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  background: #183a6b;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.back {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* List */
+.list {
+  padding: 15px;
+}
+
+/* Item */
+.item {
+  background: #e0e0e0;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Text */
+.text {
+  font-size: 14px;
+}
+
+.text a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Time badge */
+.time {
+  background: #e6a6d9;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.footer button {
+  padding: 8px 14px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+a{
+  color: white;
+}

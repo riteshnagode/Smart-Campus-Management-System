@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCMS - Full Screen Notice Management</title>
+    <link rel="stylesheet" href="facultynotice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="navbar">
+            <div class="nav-left">
+                <span class="logo">SCMS</span>
+                <span class="divider">|</span>
+                <span class="system-name">Smart campus management system</span>
+            </div>
+            <div class="nav-right">
+                <span>2025-26</span>
+                <span class="divider">|</span>
+                <span>Sem-II</span>
+                <span class="divider">|</span>
+                <div class="user-profile">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>prof.XYZ</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <h2 class="page-title">Notice Management</h2>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Department :</label>
+                    <select><option>CSE</option>
+                    <option value="1">Civil</option>
+                <option value="2">AIML</option>
+                   <option value="3">Mechanical</option>
+                   <option value="4">Electronics</option>
+                   <option value="5">IT</option> </select>
+                </div>
+                <div class="filter-group">
+                    <label>Year :</label>
+                    <select>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third year</option>
+                    <option value="4">Fourth Year</option></select>
+                </div>
+                <div class="filter-group">
+                    <label>Subject :</label>
+                    <select><option value="0">Mathematics - III</option>
+                    <option value="1"> DBMS</option>
+                <option value="2"> CN</option>
+            <option value="3">Python</option>
+         <option value="4">CPP</option>
+        </select>
+                </div>
+                <div class="filter-group">
+                    <label>Division :</label>
+                    <select ><option value="0">A</option>
+                    <option value="1">B</option>
+                <option value="2">C</option>
+            <option value="3">D</option>
+         <option value="4">E</option></select>
+               
+                
+                <input id="date" type="date" value="2026-02-27">
+                 </div>
+                 <div class="common-notice-btn">Common Notice</div>
+            </div>
+
+            <div class="notice-grid">
+                <section class="notice-card">
+                    <h3>Recent Notices</h3>
+                    <div class="scroll-area">
+                        <div class="notice-item">
+                            <i class="fa-solid fa-fountain-pen-nib"></i>
+                            <div class="notice-text">
+                                <strong>Final Exam Scheduled</strong>
+                                <p>Review the final exams schedule for all courses.</p>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                            <div class="notice-text">
+                                <strong>Staff Meeting on April 02</strong>
+                                <p>All faculty are requested to attend the meeting on ..~</p>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <i class="fa-solid fa-desktop"></i>
+                            <div class="notice-text">
+                                <strong>Holiday Notice for April</strong>
+                                <p>There will be a holiday on april 10 due to ..~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">View All ></a>
+                </section>
+
+                <section class="notice-card">
+                    <div class="create-header">
+                        <i class="fa-solid fa-plus-square"></i>
+                        <h3>Create New Notice</h3>
+                    </div>
+                    <div class="editor-area">
+                        <label>Subject :</label>
+                        <textarea placeholder="Type your notice here..."></textarea>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer-actions">
+                <button class="back-btn">  <a style="text-decoration: none;" href="http://127.0.0.1:5500/facultydashbord.html">Back</a></button>
+                <button class="send-btn">Send Notice</button>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

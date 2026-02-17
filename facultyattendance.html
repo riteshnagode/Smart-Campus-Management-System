@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SCMS Attendance</title>
+  <link rel="stylesheet" href="facultyattendance.css">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<div class="navbar">
+  <div class="left">
+    <strong>SCMS</strong> | Smart campus management system
+  </div>
+  <div class="right">
+    2025-26 | Sem-II | prof.XYZ
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+
+  <h3>Attendance Management</h3>
+
+  <!-- Filters -->
+  <div class="filters">
+    <select><option value="0">branch
+    </option>
+        <option>CSE</option>
+    <option value="2"> IT</option>
+<option value="3">Mechanical</option>
+<option value="4">ENTC</option>
+<option value="5">ECS</option>
+<option value="6">ALML</option></select>
+   
+    <select><option value="0">Subject</option>
+        <option value="1">Database Management System</option>
+    <option value="2"> Mathematics</option>
+<option value="3"> Python</option>
+<option value="4"> Java
+</option></select>
+    <select>
+        <option value="0">Division </option>
+    <option value="1"> E</option>
+<option value="2">F</option>
+    <option value="3">G</option>
+    <option value="4">H</option>
+</select>
+    <select><option value="0">Theory</option>
+    <option value="1"> Practical</option>
+<option value="3"> tutorial</option></select>
+    <input type="date" value="2026-02-27">
+  </div>
+ 
+
+  <!-- Actions -->
+  <div class="actions">
+    <button class="green">✔ Mark All Present</button>
+    <button class="gray">✖ Mark All Absent</button>
+    <button class="gray">Clear Selection</button>
+  </div>
+
+  <!-- Attendance Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Roll No.</th>
+        <th>PRN No.</th>
+        <th>Student Name</th>
+        <th>Present</th>
+        <th>Absent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td><td>250211141</td><td>Rahul Verma</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>02</td><td>250211142</td><td>Neha Patil</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>03</td><td>250211143</td><td>Amit Gupta</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>04</td><td>250211144</td><td>Vikram Desai</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>05</td><td>250211145</td><td>Priya Shah</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>06</td><td>250211146</td><td>Rohit Mehta</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+        <tr>
+          <td>07</td><td>250211146</td><td>Pratik dange</td>
+          <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+        </tr>
+           <td>08</td><td>250211141</td><td>Rahul Verma</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      
+      <tr>
+        <td>09</td><td>250211142</td><td>Neha Patil</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>10</td><td>250211143</td><td>Amit Gupta</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>11</td><td>250211144</td><td>Vikram Desai</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>12</td><td>250211145</td><td>Priya Shah</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>13</td><td>250211146</td><td>Rohit Mehta</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+        <tr>
+          <td>14</td><td>250211146</td><td>Pratik dange</td>
+          <td><input type="checkbox" checked></td><td><input type="checkbox"></td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Footer -->
+ 
+  <div class="footer">
+    <button class="gray"> <a style="text-decoration: none;"  href="http://127.0.0.1:5500/facultydashbord.html">Back</a></button>
+    <span>Total Students: 64</span>
+    <span>Present: 60</span>
+    <span>Absent: 4</span>
+    <button class="green">Save Attendance</button>
+  </div>
+
+</div>
+
+</body>
+</html>

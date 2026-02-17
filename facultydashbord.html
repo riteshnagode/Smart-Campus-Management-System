@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SCMS Faculty Dashboard</title>
+  <link rel="stylesheet" href="facultydashbord.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>SCMS</h2>
+
+    <div class="profile">
+      <div class="avatar"> <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ></div>
+      <p>Prof. XYZ</p>
+    </div>
+
+    <ul class="menu">
+      <li  class="active">Dashboard</li>
+     <a style="text-decoration: none;" href="http://127.0.0.1:5500/facultyattendance.html"> <li>Attendance</li></a>
+      <a  style="text-decoration: none;" href="http://127.0.0.1:5500/facultyassignment.html"><li>Assignments</li></a>
+     <a   style="text-decoration: none;" href="http://127.0.0.1:5500/facultynotice.html"> <li>Notices</li></a>
+      <a  style="text-decoration: none;" href="http://127.0.0.1:5500/facultylogin.html"><li class="logout">Logout</li></a>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <h3>Welcome, Prof.Shreya Mathpati</h3>
+
+    <!-- Top Cards -->
+    <div class="cards">
+      <div class="card pink">
+        <span>👥</span>
+        <a style="text-decoration: none;" href="http://127.0.0.1:5500/facultyattendance.html"><p>Attendance</p></a>
+      </div>
+      <div class="card beige">
+        <span>📘</span>
+        <a style="text-decoration: none;" href="http://127.0.0.1:5500/facultyassignment.html"><p>Assignments</p></a>
+      </div>
+      <div class="card peach">
+        <span>🔔</span>
+        <a style="text-decoration: none;" href="http://127.0.0.1:5500/facultynotice.html"><p>Notices</p></a>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom">
+
+      <!-- Recent Notices -->
+      <div class="box">
+        <h4>Recent Notices</h4>
+
+        <div class="item">
+          <strong>Final Exam Scheduled</strong>
+          <p>Review the final exams schedule for all courses.</p>
+        </div>
+
+        <div class="item">
+          <strong>Staff Meeting on April 02</strong>
+          <p>All faculty are requested to attend the meeting.</p>
+        </div>
+
+        <div class="item">
+          <strong>Holiday Notice for April</strong>
+          <p>There will be a holiday on April 10.</p>
+        </div>
+
+        <a href="#">View All ></a>
+      </div>
+
+      <!-- Upcoming Classes -->
+      <div class="box">
+        <h4>Upcoming Classes</h4>
+
+        <div class="item">
+          <strong>Physics Lecture</strong>
+          <p>Feb 27, 2026 | 12:15 PM<br>Room 306</p>
+        </div>
+
+        <div class="item">
+          <strong>Data Science</strong>
+          <p>Feb 28, 2026 | 3:15 PM<br>Room 212</p>
+        </div>
+
+        <a href="#">View All ></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

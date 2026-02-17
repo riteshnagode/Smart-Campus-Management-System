@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background:#154c9e;
+}
+
+
+
+/* Main container */
+.main-container {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #154c9e;
+  border-radius: 10px;
+  text-align: center;
+}
+.Back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 22px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  background: #e6e6e6cf;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title */
+.title {
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Cards layout */
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Icon */
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon.blue { background: #1e88e5; color: white; }
+.icon.green { background: #2ecc71; color: white; }
+.icon.orange { background: #f39c12; color: white; }
+
+/* Card title */
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* List */
+.card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Link */
+.card a {
+  color: #1e88e5;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}

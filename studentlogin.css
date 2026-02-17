@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body { height: 100%;
+     width: 100%;
+  margin: 0;
+}
+
+/* Background */
+.page {
+  min-height: 100vh;
+  background: url("bg.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(53, 185, 185);
+}
+.back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  background: #e6e6e6e2;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login Card */
+.login-card {
+  width: 360px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-size: 13px;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Input box with icon */
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.input-box span {
+  margin-right: 8px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+/* Captcha */
+.captcha {
+  margin: 8px 0;
+}
+
+.code {
+  font-weight: bold;
+  color: red;
+  letter-spacing: 2px;
+}
+
+/* Captcha input */
+.captcha-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  width:60px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login {
+  background: #1e88e5;
+  color: white;
+}
+
+.reset {
+  background: #e0e0e0;
+}
+
+/* Links */
+.links {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.links a {
+  color: #1e88e5;
+  text-decoration: none;
+  margin: 0 4px;
+}
+.background img{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+}
