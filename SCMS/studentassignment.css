@@ -1,0 +1,102 @@
+:root {
+    --dark-navy: #0e2a53;
+    --card-orange: #df9458;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.assignment-header {
+    background-color: var(--dark-navy);
+    padding: 25px 40px;
+}
+
+.back-arrow {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.content-wrapper {
+    padding: 60px;
+}
+
+.assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.assign-card {
+    background-color: var(--card-orange);
+    padding: 40px;
+    border-radius: 60px; /* High rounding to match image */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    
+    /* FIX: Force all cards to the same height */
+    min-height: 180px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.assign-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.assign-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.assign-card p {
+    font-size: 1.15rem;
+    color: #222;
+    font-weight: 400;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .assignments-grid {
+        grid-template-columns: 1fr;
+    }
+    .content-wrapper {
+        padding: 30px;
+    }
+    .assign-card {
+        min-height: 150px;
+        border-radius: 40px;
+    }
+}

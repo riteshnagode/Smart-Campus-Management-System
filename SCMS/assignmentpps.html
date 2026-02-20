@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Physics - Course Stream</title>
+    <link rel="stylesheet" href="physics.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <style>
+    :root {
+    --google-blue: rgba(7, 20, 96, 0.772);
+    --pending-color: #f29900;
+    --incomplete-color: #d93025;
+    --done-color: #1e8e3e;
+    --border-color: #dadce0;
+}
+
+body { font-family: 'Inter', sans-serif; margin: 0; background-color: #fff; }
+
+/* RED BOX: Centered Header */
+.course-header {
+    background-color: var(--google-blue);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    position: relative;
+}
+
+.header-text { text-align: center; }
+.header-text h1 { margin: 0; font-size: 1.4rem; }
+.header-text p { margin: 5px 0 0; font-size: 0.9rem; opacity: 0.9; }
+
+.back-btn { position: absolute; left: 20px; color: white; text-decoration: none; font-size: 1.5rem; }
+
+/* YELLOW BOX: Nav Grid */
+.status-nav { border-bottom: 1px solid var(--border-color); }
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 even boxes */
+    max-width: 100%;
+}
+.nav-box {
+    border-right: 1px solid var(--border-color);
+    padding: 15px;
+
+}
+
+.nav-item p {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-item { font-weight: 500; color: #5f6368; cursor: pointer; }
+
+/* BLACK BOX: Stream Area */
+.stream-container { padding: 20px; }
+
+.stream-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f1f3f4;
+    transition: all 0.3s ease;
+}
+
+.item-icon {
+    width: 40px; height: 40px; background: var(--google-blue);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: white; margin-right: 15px;
+}
+
+.item-content { flex: 1; }
+.post-text { margin: 0; font-size: 1rem; color: #3c4043; }
+.post-date { font-size: 0.8rem; color: #70757a; }
+
+/* Action Buttons */
+.item-actions { display: flex; gap: 10px; align-items: center; }
+.status-label {
+    padding: 6px 12px; border-radius: 4px; border: 1px solid var(--border-color);
+    font-size: 0.75rem; font-weight: 600; cursor: pointer; background: white;
+}
+.reset-icon { cursor: pointer; color: #ccc; font-size: 1.2rem; margin-left: 5px; }
+
+/* --- THE LOGIC (Radio Hack) --- */
+.logic-radio { display: none; }
+
+/* Pending Highlight */
+.pending-trigger:checked ~ .stream-item {
+    background-color: #fef7e0;
+    border-left: 10px solid var(--pending-color);
+}
+.pending-trigger:checked ~ .stream-item .p-label { background: var(--pending-color); color: white; border-color: var(--pending-color); }
+
+/* Incomplete Highlight */
+.incomplete-trigger:checked ~ .stream-item {
+    background-color: #fce8e6;
+    border-left: 10px solid var(--incomplete-color);
+}
+.incomplete-trigger:checked ~ .stream-item .i-label { background: var(--incomplete-color); color: white; border-color: var(--incomplete-color); }
+
+/* Done Highlight */
+.done-trigger:checked ~ .stream-item {
+    background-color: #e6f4ea;
+    border-left: 10px solid var(--done-color);
+}
+.done-trigger:checked ~ .stream-item .d-label { background: var(--done-color); color: white; border-color: var(--done-color); }
+.nav-item{
+    margin-left: 100px;
+}
+a{
+    color: black;
+}
+</style>
+
+
+    <header class="course-header">
+        <a style="text-decoration: none;" href="http://127.0.0.1:5500/studentassignment.html" class="back-btn">←</a>
+        <div class="header-text">
+            <h1>Programming For Problem Solving (2025-26)</h1>
+            <p>Mr. Babar sir</p>
+        </div>
+    </header>
+
+    <nav class="status-nav">
+        <div class="nav-container">
+            <span class="nav-item"><h3>All ASSIGNMENTS</h3></span>
+            
+        </div>
+    </nav>
+
+    <main class="stream-container">
+        
+        <div class="assignment-wrapper">
+            <input type="radio" name="assign-1" id="all-1" class="logic-radio" checked>
+            <input type="radio" name="assign-1" id="pending-1" class="logic-radio pending-trigger">
+            <input type="radio" name="assign-1" id="incomplete-1" class="logic-radio incomplete-trigger">
+            <input type="radio" name="assign-1" id="done-1" class="logic-radio done-trigger">
+
+            <div class="stream-item">
+                <div class="item-icon">📘</div>
+                <div class="item-content">
+                    <p class="post-text"><a style="text-decoration: none;" href="http://127.0.0.1:5500/originalassignmentpps.html">Ajinkya Babar posted a new material: <strong>Sample Programs</a></strong></p>
+                    <span class="post-date">Feb 16</span>
+                </div>
+                
+                <div class="item-actions">
+                    <label for="pending-1" class="status-label p-label">Pending</label>
+                    <label for="incomplete-1" class="status-label i-label">Incomplete</label>
+                    <label for="done-1" class="status-label d-label">Mark as Done</label>
+                    <label for="all-1" class="reset-icon">↺</label>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

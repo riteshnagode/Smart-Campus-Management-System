@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: #3f5173;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  padding: 30px;
+  text-align: center;
+}
+
+.avatar {
+  font-size: 60px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.menu li:hover,
+.menu .active {
+  background: #e5e5e5;
+  color: black;
+  border-left: 4px solid #3f5173;
+}
+
+.logout {
+  margin-top: auto;
+  color: #ffdddd;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background: white;
+}
+
+/* Header */
+.header {
+  background: #e8f0eb;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Attendance */
+.attendance-cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.att-card {
+  flex: 1;
+  background: linear-gradient(135deg, #1e88e5, #26c6da);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Bottom */
+.bottom {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Boxes */
+.box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+/* Actions */
+.actions {
+  width: 200px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.actions button {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #3f5173;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menu a{
+    color: white;
+ 
+}
+a{
+  color: black;
+}

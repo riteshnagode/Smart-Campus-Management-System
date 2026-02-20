@@ -1,0 +1,62 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.right {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.recess {
+    font-weight: bold;
+    background-color: #e6e6e6;
+}
+.back{
+     
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  font-size: 22px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  background: #e6e6e6cf;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

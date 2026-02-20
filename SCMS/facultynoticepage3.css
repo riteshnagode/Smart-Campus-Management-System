@@ -1,0 +1,38 @@
+*{ margin:0%;
+padding:0%;
+box-sizing:border-box;
+}
+html,body{
+ height:100%;
+width:100%
+}
+body{
+     background-color: rgba(7, 20, 96, 0.772);
+}
+.notice{
+    margin-top: 200px;
+    margin-left: 220px;
+}
+  .notice pre{
+height: 300px;
+ width:1050px;
+ font-family: 'Times New Roman';
+ background-color: white;
+ border-radius: 30px;
+ padding: 20px;
+}
+.back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 22px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  background: #e6e6e6cf;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

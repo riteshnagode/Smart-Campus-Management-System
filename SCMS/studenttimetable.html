@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIT Timetable - Div F</title>
+    <style>
+        /* --- General Reset & Page Setup --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e0e0e0;
+            font-family: "Calibri", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .a4-page {
+            background-color: white;
+            width: 210mm; /* A4 Width */
+            min-height: 297mm; /* A4 Height */
+            padding: 15mm;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        /* --- Header Section --- */
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Logo Placeholder Styling */
+        .logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 70px;
+            height: 70px;
+        }
+        
+
+        .header h1 {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            font-size: 11pt;
+            font-weight: bold;
+            margin: 2px 0;
+            color: #000;
+        }
+
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* --- Table Styling --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        th, td {
+            border: 1.5px solid #000;
+            padding: 6px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* Header Rows */
+        thead th {
+            background-color: #d9d9d9;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Bold text for abbreviations inside table */
+        .subject-code {
+            font-weight: bold;
+        }
+
+        /* --- Specific Table Helpers --- */
+        .break-row td {
+            font-weight: bold;
+            background-color: #fff;
+            padding: 4px;
+        }
+
+        /* --- Footer Legend Table --- */
+        .legend-table th {
+            background-color: #bfbfbf;
+        }
+
+        .legend-table td {
+            text-align: left;
+            padding: 4px 8px;
+        }
+
+        .legend-table .center-text {
+            text-align: center;
+        }
+
+        .practical-cell {
+            padding: 0; 
+            margin: 0;
+            height: 100%;
+        }
+
+        /* Nested rows for the practical column */
+        .practical-row {
+            border-bottom: 1px solid #000;
+            padding: 3px 8px;
+            display: block;
+        }
+        .practical-row:last-child {
+            border-bottom: none;
+        }
+
+        /* --- Print Media Query --- */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .a4-page {
+                box-shadow: none;
+                width: 100%;
+                height: auto;
+                padding: 0;
+            }
+        }
+        .header img{
+            height: 150px;
+            width: 100px;
+            
+        }
+        .back{
+     
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: 22px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  background: #e6e6e6cf;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+    color: black;
+}
+
+       
+    </style>
+</head>
+<body>
+    <div class="back"><a style="text-decoration: none;" href="http://127.0.0.1:5500/studentdashbord.html">Back</a></div>
+
+    <div class="a4-page">
+        <div class="header">
+            <div> <img src="https://imgs.search.brave.com/iu0ZqLe-gNrEBhyXze_qLa8zK6Zvwvhep9KzQ0JUF4o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmlkeWF2aXNpb24u/Y29tL0NvbGxlZ2VV/cGxvYWRzL0xvZ29z/LzIwMTgtMDYtMS0x/OC0wMC0xMV80NDQ0/NDQ0NDQ0NDQuanBn" alt=""></div>
+           
+            <h1>Walchand Institute of Technology, Solapur</h1>
+            <p>An Autonomous Institute</p>
+            <p>F.Y.B.Tech. Part - II (2025-26)</p>
+            <p>Time-Table</p>
+            <p>Div - F (Computer Science and Engineering)</p>
+        </div>
+
+        <div class="sub-header">
+            <span>Room No. : CM 305 (Civil-Mech Building)</span>
+            <span>Group - B</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 5%;"></th>
+                    <th style="width: 15%;">TIME</th>
+                    <th style="width: 16%;">MON</th>
+                    <th style="width: 16%;">TUE</th>
+                    <th style="width: 16%;">WED</th>
+                    <th style="width: 16%;">THU</th>
+                    <th style="width: 16%;">FRI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>10:15 AM - 11:15 AM</td>
+                    <td class="subject-code">EM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="subject-code">PPS</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>11:15 AM - 12:15 PM</td>
+                    <td rowspan="2" class="subject-code">
+                        F1-EP(P)<br>F2-EM(P)<br>F3-EM-II(T)
+                    </td>
+                    <td rowspan="2" class="subject-code">
+                        F3-EES(T)<br>F1-EG(P)<br>F2-PPS(P)
+                    </td>
+                    <td class="subject-code">EP</td>
+                    <td class="subject-code">EG</td>
+                    <td class="subject-code">EM</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>12:15 PM - 01:15 PM</td>
+                    <td class="subject-code">EM-II</td>
+                    <td class="subject-code">EM-II</td>
+                    <td class="subject-code">EES</td>
+                </tr>
+                <tr class="break-row">
+                    <td colspan="7" style="text-align: center;">01:15 PM TO 02:15 PM &nbsp;&nbsp;&nbsp; LUNCH BREAK</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>02:15 PM - 03:15 PM</td>
+                    <td class="subject-code">EM-II</td>
+                    <td class="subject-code">EP</td>
+                    <td class="subject-code">EM</td>
+                    <td rowspan="2" class="subject-code">
+                        F3-EP(P)<br>F1-EM(P)<br>F2-EM-II(T)
+                    </td>
+                    <td rowspan="2" class="subject-code">
+                        F2-EES(T)<br>F3-EG(P)<br>F1-PPS(P)
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>03:15 PM - 04:15 PM</td>
+                    <td class="subject-code">EG</td>
+                    <td class="subject-code">PPS</td>
+                    <td class="subject-code">EES</td>
+                </tr>
+                <tr class="break-row">
+                    <td colspan="7" style="text-align: center;">04:15 PM TO 04:20 PM &nbsp;&nbsp;&nbsp; SHORT BREAK</td>
+                </tr>
+                <tr>
+                    <td><strong>6</strong></td>
+                    <td>04:20 PM - 05:20 PM</td>
+                    <td></td>
+                    <td rowspan="2" class="subject-code">
+                        F2-EP(P)<br>F3-EM(P)<br>F1-EM-II(T)
+                    </td>
+                    <td rowspan="2" class="subject-code">
+                        F1-EES(T)<br>F2-EG(P)<br>F3-PPS(P)
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>7</strong></td>
+                    <td>05:20 PM - 06:20 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="legend-table">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">Sr. No.</th>
+                    <th style="width: 10%;">ABBR</th>
+                    <th style="width: 30%;">SUBJECT</th>
+                    <th style="width: 25%;">FACULTY</th>
+                    <th style="width: 30%;">PRACTICAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" class="center-text">1</td>
+                    <td rowspan="3" class="center-text subject-code">EP</td>
+                    <td rowspan="3">Engineering Physics</td>
+                    <td rowspan="3">Dr. Mrs. P. S. Joshi</td>
+                    <td class="practical-cell"><div class="practical-row">F1: Dr. Mrs. P. S. Joshi</div></td>
+                </tr>
+                <tr><td class="practical-cell"><div class="practical-row">F2: Dr. Mrs. P. S. Joshi</div></td></tr>
+                <tr><td class="practical-cell"><div class="practical-row">F3: Dr. Mrs. P. S. Joshi</div></td></tr>
+
+                <tr>
+                    <td rowspan="3" class="center-text">2</td>
+                    <td rowspan="3" class="center-text subject-code">EM-II</td>
+                    <td rowspan="3">Engineering Mathematics-II</td>
+                    <td rowspan="3">Mr. M. S. Basargaon</td>
+                    <td class="practical-cell"><div class="practical-row">F1: Mr. M. S. Basargaon</div></td>
+                </tr>
+                <tr><td class="practical-cell"><div class="practical-row">F2: Mr. M. S. Basargaon</div></td></tr>
+                <tr><td class="practical-cell"><div class="practical-row">F3: Mr. M. S. Basargaon</div></td></tr>
+
+                <tr>
+                    <td rowspan="3" class="center-text">3</td>
+                    <td rowspan="3" class="center-text subject-code">EES</td>
+                    <td rowspan="3">English for Employability Skills</td>
+                    <td rowspan="3">Mr. R. D. Deshmukh</td>
+                    <td class="practical-cell"><div class="practical-row">F1: Mr. R. D. Deshmukh</div></td>
+                </tr>
+                <tr><td class="practical-cell"><div class="practical-row">F2: Mr. R. D. Deshmukh</div></td></tr>
+                <tr><td class="practical-cell"><div class="practical-row">F3: Mr. R. D. Deshmukh</div></td></tr>
+
+                <tr>
+                    <td rowspan="3" class="center-text">4</td>
+                    <td rowspan="3" class="center-text subject-code">EM</td>
+                    <td rowspan="3">Engineering Mechanics</td>
+                    <td rowspan="3">Mr. S. A. Gosavi</td>
+                    <td class="practical-cell"><div class="practical-row">F1: Mr. S. A. Gosavi</div></td>
+                </tr>
+                <tr><td class="practical-cell"><div class="practical-row">F2: Mr. S. A. Gosavi</div></td></tr>
+                <tr><td class="practical-cell"><div class="practical-row">F3: Mr. A. M. Angadi</div></td></tr>
+
+                <tr>
+                    <td rowspan="3" class="center-text">5</td>
+                    <td rowspan="3" class="center-text subject-code">EG</td>
+                    <td rowspan="3">Engineering Graphics & CAD</td>
+                    <td rowspan="3">Mr. S. M. Math</td>
+                    <td class="practical-cell"><div class="practical-row">F1: Mr. S. M. Math</div></td>
+                </tr>
+                <tr><td class="practical-cell"><div class="practical-row">F2: Mr. S. M. Math</div></td></tr>
+                <tr><td class="practical-cell"><div class="practical-row">F3: Mr. S. M. Math</div></td></tr>
+
+                <tr>
+                    <td rowspan="3" class="center-text">6</td>
+                    <td rowspan="3" class="center-text subject-code">PPS</td>
+                    <td rowspan="3">Programming for Problem Solving</td>
+                    <td rowspan="3">Mr. A. A. Babar</td>
+                    <td class="practical-cell"><div class="practical-row">F1: Mr. A. A. Babar</div></td>
+                </tr>
+                <tr><td class="practical-cell"><div class="practical-row">F2: Mr. A. A. Babar</div></td></tr>
+                <tr><td class="practical-cell"><div class="practical-row">F3: Mr. A. A. Babar</div></td></tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Notifications - Academic Portal</title>
+    <link rel="stylesheet" href="viewall.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <style>
+    :root {
+    --primary-blue: #0e2a53;
+    --accent-blue: #4285f4;
+    --card-bg: #ffffff;
+    --bg-light: #f4f7fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--bg-light);
+}
+
+/* Top Navbar */
+.top-nav {
+    background: var(--primary-blue);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sort-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+/* Dashboard Grid Layout */
+.dashboard-layout {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.filter-list { list-style: none; padding: 0; margin-top: 20px; }
+.filter-list li {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    color: #555;
+}
+
+.filter-list li.active, .filter-list li:hover {
+    background: #eef2f7;
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+/* Notification Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    flex-grow: 1;
+}
+
+/* Notification Cards */
+.notif-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-top: 5px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.notif-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.notif-card h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--primary-blue); }
+.notif-card p { font-size: 0.95rem; color: #666; line-height: 1.5; margin-bottom: 20px; }
+.card-time { font-size: 0.8rem; font-weight: 600; color: #999; }
+
+/* Color Coding based on Topic */
+.notif-card.urgent { border-top-color: #dc3545; }
+.notif-card.assignment { border-top-color: #ff9800; }
+.notif-card.faculty { border-top-color: var(--accent-blue); }
+.notif-card.general { border-top-color: #28a745; }
+ .back a{
+    color: black;
+}
+.back{
+     
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  font-size: 22px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  background: #e6e6e6cf;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#notice  h3{
+    margin-left:700px;
+}
+a{
+    color: black;
+}
+
+ </style>
+     
+     <div class="back"><a style="text-decoration: none;" href="http://127.0.0.1:5500/studentnotice.html">Back</a></div>
+
+    <nav class="top-nav">
+        <div id="notice" class="nav-brand"><h3>📖NOTICES</h3></div>
+        <div class="nav-sort">
+            <span class="sort-label">Sort by:</span>
+            <select class="sort-select">
+                <option>Newest First</option>
+                <option>Oldest First</option>
+                <option>Urgent</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <h3>Filter Topics</h3>
+            <ul class="filter-list">
+                <li class="active">• All Notifications</li>
+                <li>• Exam Updates</li>
+                <li>• Assignment Posts</li>
+                <li>• Faculty Messages</li>
+                <li>• Event Alerts</li>
+            </ul>
+        </aside>
+
+        <main class="grid-container">
+            
+            <div class="notif-card urgent">
+                <div class="card-tag">Event Update</div>
+                <h3>Strokes got postponed</h3>
+                <p>The upcoming strokes event has been rescheduled. New dates will be announced soon.</p>
+                <span class="card-time">4 mins ago</span>
+            </div>
+
+           <a style="text-decoration: none;" href="http://127.0.0.1:5500/drawing.html"> <div class="notif-card assignment">
+                <div class="card-tag">Submission</div>
+                <h3>Engineering Graphics</h3>
+                <p>Final sheet submission is mandatory by 27th Jan. Please bring all previous sheets.</p>
+                <span class="card-time">40 mins ago</span>
+            </div></a>
+
+            <a style="text-decoration: none;" href="http://127.0.0.1:5500/studentnoticeclickhear.html"><div class="notif-card faculty">
+               <div class="card-tag">Faculty Post</div>
+                <h3>Engineering Physics</h3>
+                <p>Experiment 1: Crystallography material has been uploaded. Check the course stream.</p>
+                <span class="card-time">2 hrs ago</span>
+            </div></a>
+
+            <div class="notif-card general">
+                <div class="card-tag">General</div>
+                <h3>Disaster Management</h3>
+                <p>A new elective subject "Disaster Management (DM)" has been added to your curriculum.</p>
+                <span class="card-time">1 hr ago</span>
+            </div>
+
+            <div class="notif-card assignment">
+                <div class="card-tag">Faculty Message</div>
+                <h3>Applied Chemistry</h3>
+                <p>Lab manuals for Semester 2 are now available in the stationery store.</p>
+                <span class="card-time">1 day ago</span>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
